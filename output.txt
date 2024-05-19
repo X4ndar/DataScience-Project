@@ -1,0 +1,20 @@
+Category Title: 24 ساعة, URL: https://www.hespress.com/tag/24heures
+Category Title: مصدر مطلع, URL: https://www.hespress.com/informed-source
+Category Title: زاوية حادة, URL: https://www.hespress.com/acute-angle
+Category Title: برامج هسبريس, URL: https://www.hespress.com/tag/%d8%a8%d8%b1%d8%a7%d9%85%d8%ac-%d9%87%d8%b3%d8%a8%d8%b1%d9%8a%d8%b3
+Category Title: صوت وصورة, URL: https://www.hespress.com/sawt-soura
+Category Title: إنفوغرافيك, URL: https://www.hespress.com/infographic
+Category Title: ريـاضـة, URL: https://www.hespress.com/sport
+Category Title: سياسة, URL: https://www.hespress.com/politique
+Category Title: اقتصاد, URL: https://www.hespress.com/economie
+Category Title: خارج الحدود, URL: https://www.hespress.com/international
+Category Title: كاريكاتير, URL: https://www.hespress.com/le-dessin-du-jour
+Category Title: سوشيال فيديو, URL: https://www.hespress.com/social-video
+Category Title: كُتّاب وآراء, URL: https://www.hespress.com/writers
+Category Title: من الأمس, URL: https://www.hespress.com/histoire
+Category Title: حوارات, URL: https://www.hespress.com/interviews
+Category Title: زووم, URL: https://www.hespress.com/%d8%b2%d9%88%d9%88%d9%85
+Category Title: فن وثقافة, URL: https://www.hespress.com/art-et-culture
+Category Title: مغاربة العالم, URL: https://www.hespress.com/marocains-du-monde
+Category Title: منوعات, URL: https://www.hespress.com/varieties
+Category Title: منبر هسبريس, URL: https://www.hespress.com/opinions
