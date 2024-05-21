@@ -4,7 +4,7 @@ import re
 from nltk.tokenize import word_tokenize
 from tqdm import tqdm
 
-# Define Arabic and Moroccan Darija stop words
+
 arabic_darija_stop_words = set([
     "من", "في", "على", "و", "فى", "لم", "ما", "كما", "هذا", "أن", "هو", "عن", "هذه",
     "به", "كان", "إلى", "التي", "الذي", "الذين", "أنا", "علي", "أو", "إذا", "أي", "هل",
@@ -21,12 +21,12 @@ def normalize_arabic(text):
     return text
 
 def clean_text(text):
-    # Normalize text
+   
     text = normalize_arabic(text)
-    # Remove non-word characters and digits
+    
     text = re.sub(r'[^\w\s]', '', text)
     text = re.sub(r'\d+', '', text)
-    # Tokenize and remove stop words
+    
     tokens = word_tokenize(text)
     tokens = [token for token in tokens if token not in arabic_darija_stop_words]
     return ' '.join(tokens)
@@ -48,7 +48,7 @@ def load_data(filepath):
 
 def clean_data(df):
     tqdm.pandas(desc="Cleaning data")
-    # Apply custom text cleaning
+    
     df['Processed_Comment'] = df['Comment'].progress_apply(clean_text)
     df = df.drop_duplicates()
     df = df[df['Processed_Comment'].str.strip() != '']
@@ -60,7 +60,7 @@ def main():
     df = clean_data(df)
     print(df.head())
 
-    # Define a safe path to save the file
+   
     save_path = os.path.join(os.getcwd(), 'cleaned_comments.csv')
     try:
         df.to_csv(save_path, index=False)

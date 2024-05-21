@@ -1,22 +1,21 @@
 import pandas as pd
 from textblob import TextBlob
-from tqdm.auto import tqdm  # Auto will select appropriate tqdm submodule (notebook or terminal)
+from tqdm.auto import tqdm  
 from deep_translator import GoogleTranslator
 import time  # Import the time module
 
 def translate_text(text, lang='en', retries=3):
-    """ Translate text to the specified language using GoogleTranslator with retry logic. """
     for attempt in range(retries):
         try:
-            if text:  # Ensure the text is not None
+            if text:  
                 translated = GoogleTranslator(source='auto', target=lang).translate(text)
                 return translated
             else:
                 return text
         except Exception as e:
             print(f"Error translating text: {e}. Retrying ({attempt + 1}/{retries})...")
-            time.sleep(2)  # Wait for 2 seconds before retrying
-    return text  # Return the original text if all retries fail
+            time.sleep(2)  
+    return text  
 
 def label_sentiment(text):
     """ Label the sentiment based on TextBlob analysis. """
